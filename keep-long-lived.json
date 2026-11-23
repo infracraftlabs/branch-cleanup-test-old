@@ -1,0 +1,7 @@
+{
+  "name": "keep-long-lived-branches",
+  "target": "branch",
+  "enforcement": "active",
+  "conditions": { "ref_name": { "include": ["~DEFAULT_BRANCH", "refs/heads/release/*"], "exclude": [] } },
+  "rules": [{ "type": "deletion" }]
+}
